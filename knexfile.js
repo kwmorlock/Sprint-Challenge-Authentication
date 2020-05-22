@@ -1,3 +1,7 @@
+const pgConnection = process.env.DATABASE_URL || "postgresql://postgres@localhost/auth";
+
+require("dotenv").config();
+
 module.exports = {
   development: {
     client: 'sqlite3',
