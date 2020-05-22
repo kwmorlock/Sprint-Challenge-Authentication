@@ -17,7 +17,7 @@ function find() {
 }
 
 function findBy(filter) {
-  console.log("filter", filter);
+  // console.log("filter", filter);
   return db("users").where(filter);
     // .join("roles as r", "u.role", "r.id")
     // .where(filter)
